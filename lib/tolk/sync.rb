@@ -21,6 +21,7 @@ module Tolk
       end
 
       def flat_hash(data, prefix = '', result = {})
+        raise "Empty Locale" if data.nil?
         data.each do |key, value|
           current_prefix = prefix.present? ? "#{prefix}.#{key}" : key
 
