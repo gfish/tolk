@@ -34,7 +34,7 @@ namespace :tolk do
 
   desc "Copies required assets from tolk to application's public/ directory"
   task :import_assets do
-    tolk_assets = File.expand_path(File.join(File.dirname(__FILE__), '../../public/tolk'))
+    tolk_assets = File.expand_path(File.join(File.dirname(__FILE__), '../assets/tolk'))
     command = "cp -R #{tolk_assets} #{Rails.root}/public/"
     puts command
     system(command)
