@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.homepage = 'http://www.rubyonrails.org'
 
   s.platform = Gem::Platform::RUBY
-  s.add_dependency('will_paginate', '~> 3.0')
+  s.add_dependency('will_paginate', '~> 3.0pre2')
   s.add_dependency('ya2yaml', '~> 0.26')
 
   s.files = Dir['README', 'MIT-LICENSE', 'init.rb', 'lib/**/*']
